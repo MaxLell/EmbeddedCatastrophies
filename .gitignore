@@ -1,0 +1,13 @@
+/Debug/
+/Release/
+/.build/
+*.log
+*.o
+*.lst
+*.map
+*.d
+*.elf
+*.bin
+*.hex
+*.dep
+*.ioc.generation/
