@@ -27,7 +27,9 @@
 /* USER CODE BEGIN Includes */
 #include "stdbool.h"
 #include "log.h"
-#include "custom_assert.h"
+#include "app.h"
+#include "delay.h"
+#include "blinky_led.h"
 
 /* USER CODE END Includes */
 
@@ -117,6 +119,8 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+//	app_main();
+
   /* Infinite loop */
   for (;;)
   {
@@ -125,11 +129,10 @@ void StartDefaultTask(void *argument)
     if (true == buttonWasPressed)
     {
       log_info("button was pressed");
-      HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-      HAL_Delay(200);
+      blinky_led_toggle();
+      delay_ms(200);
     }
-
-    osDelay(1);
+    delay_ms(1);
   }
   /* USER CODE END StartDefaultTask */
 }
