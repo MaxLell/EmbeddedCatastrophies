@@ -119,19 +119,12 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-//	app_main();
+	app_main();
 
   /* Infinite loop */
   for (;;)
   {
-    // Get the status of the push button
-    bool buttonWasPressed = !(bool)HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin);
-    if (true == buttonWasPressed)
-    {
-      log_info("button was pressed");
-      blinky_led_toggle();
-      delay_ms(200);
-    }
+    
     delay_ms(1);
   }
   /* USER CODE END StartDefaultTask */
