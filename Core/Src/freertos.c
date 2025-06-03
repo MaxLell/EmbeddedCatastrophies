@@ -124,7 +124,6 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for (;;)
   {
-    
     delay_ms(1);
   }
   /* USER CODE END StartDefaultTask */

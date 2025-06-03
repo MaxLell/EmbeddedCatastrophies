@@ -1,6 +1,10 @@
 #ifndef ONBOARDTEST_TESTDECLERATIONS_H
 #define ONBOARDTEST_TESTDECLERATIONS_H
 
+/*=================================================================
+ * enums for the test scenarios
+ *=================================================================*/
+
 typedef enum
 {
     // Generic enums - do not modify
@@ -16,10 +20,17 @@ typedef enum
     E_TEST_LAST
 } OnBoardTest_Test_e;
 
+/*=================================================================
+ * typedefs for the test functions
+  *=================================================================*/
+
 typedef void (*OnBoardTest_fn_t)(void);
 
-void test_blinky_led();
+/*=================================================================
+ * Test declarations
+ *=================================================================*/
 
+void test_blinky_led();
 void test_error_divide_by_zero();
 
 #endif // ONBOARDTEST_TESTDECLERATIONS_H
