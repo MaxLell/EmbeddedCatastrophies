@@ -12,3 +12,5 @@
 *.dep
 *.ioc.generation/
 L476_EmbeddedCatastrophies.launch
+.settings/org.eclipse.cdt.core.prefs
+.settings/org.eclipse.cdt.ui.prefs
