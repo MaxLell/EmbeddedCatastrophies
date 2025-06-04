@@ -15,6 +15,7 @@ typedef enum
 
 	// enums for the error scenarios
 	E_SIMULATE_ERROR_DIVIDE_BY_ZERO,
+    E_SIMULATE_ERROR_STACK_OVERFLOW,
 
     // Generic enum - do not modify
     E_TEST_LAST
@@ -32,5 +33,6 @@ typedef void (*OnBoardTest_fn_t)(void);
 
 void test_blinky_led();
 void test_error_divide_by_zero();
+void test_error_stack_overflow();
 
 #endif // ONBOARDTEST_TESTDECLERATIONS_H

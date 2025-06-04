@@ -8,7 +8,7 @@
  *=================================================================*/
 
 //! variable that holds the id of the test, which is currently running
-OnBoardTest_Test_e g_nof_current_test = E_SIMULATE_ERROR_DIVIDE_BY_ZERO;
+OnBoardTest_Test_e g_nof_current_test = E_SIMULATE_ERROR_STACK_OVERFLOW;
 
 /**
  * loop Function Array
@@ -16,6 +16,7 @@ OnBoardTest_Test_e g_nof_current_test = E_SIMULATE_ERROR_DIVIDE_BY_ZERO;
 static const OnBoardTest_fn_t test_lookup_table[E_TEST_LAST] = {
     [E_TEST_BLINKY_LED] = test_blinky_led,
 	[E_SIMULATE_ERROR_DIVIDE_BY_ZERO] = test_error_divide_by_zero,
+    [E_SIMULATE_ERROR_STACK_OVERFLOW] = test_error_stack_overflow,
 };
 
 bool on_board_test_is_testing_enabled(void)

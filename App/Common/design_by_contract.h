@@ -15,7 +15,7 @@
         {                                                  \
             assert_failed(#condition, __FILE__, __LINE__); \
         }                                                  \
-    } while (false)
+    } while (0)
 
 /**
  * @brief Invariant condition which needs to be true during the execution of the program.
@@ -28,7 +28,7 @@
         {                                                  \
             assert_failed(#condition, __FILE__, __LINE__); \
         }                                                  \
-    } while (false)
+    } while (0)
 
 /**
  * @brief Postcondition condition which needs to be true after the function is called.
@@ -41,7 +41,7 @@
         {                                                  \
             assert_failed(#condition, __FILE__, __LINE__); \
         }                                                  \
-    } while (false)
+    } while (0)
 
 #endif // DESIGN_BY_CONTRACT_H
 

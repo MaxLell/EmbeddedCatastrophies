@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CUSTOM_ASSERT_H
+#define CUSTOM_ASSERT_H
 
 void assert_failed(const char *condition, const char *file, int line);
 
@@ -7,6 +8,8 @@ void assert_failed(const char *condition, const char *file, int line);
     {                                                                    \
         if (!(condition))                                                \
         {                                                                \
-            assert_failed(#condition, __FILE__, __LINE__); \
+            assert_failed(#condition, __FILE__, __LINE__);               \
         }                                                                \
-    } while (false)
+    } while (0)
+
+#endif // CUSTOM_ASSERT_H
