@@ -1,6 +1,6 @@
-/Debug/
-/Release/
-/.build/
+**/Debug/
+**/Release/
+**/.build/
 *.log
 *.o
 *.lst
@@ -11,6 +11,5 @@
 *.hex
 *.dep
 *.ioc.generation/
-L476_EmbeddedCatastrophies.launch
-.settings/org.eclipse.cdt.core.prefs
-.settings/org.eclipse.cdt.ui.prefs
+*.launch
+*.prefs
