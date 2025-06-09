@@ -11,5 +11,4 @@
 *.hex
 *.dep
 *.ioc.generation/
-*.launch
 *.prefs
